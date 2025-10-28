@@ -1,0 +1,12 @@
+Procedure:
+1. Verify installation: docker --version
+2. Pull Ubuntu image: docker pull ubuntu
+3. Run container: docker run -it ubuntu
+
+4. List images: docker images
+5. Run NGINX server: docker run -d -p 8080:80 nginx
+6. Access http://localhost:8080 to view the web page.
+7. Stop and remove containers: docker stop &lt;id&gt;, docker rm &lt;id&gt;
+Expected Output:
+- Ubuntu container terminal access.
+- NGINX welcome page visible.
