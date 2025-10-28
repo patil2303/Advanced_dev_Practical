@@ -1,0 +1,41 @@
+**Create GitHub Repository**
+Go to GitHub
+ and log in.
+Click New repository.
+Name it: ci-cd-demo
+Optional: Add a README
+Click Create repository
+
+# Step 1: Clone GitHub repository
+git clone https://github.com/<your-username>/ci-cd-demo.git   # Replace with your username
+cd ci-cd-demo
+
+# Step 2: Create app.py (simple Python app)
+echo 'print("Hello! This is a simple app.")' > app.py
+
+# Step 3: Create deploy.sh (CI/CD simulation script)
+echo '#!/bin/bash
+echo "Building the app..."        # Simulate build step
+sleep 1
+echo "Running tests..."           # Simulate test step
+sleep 1
+echo "Deploying the app..."       # Simulate deploy step
+sleep 1
+echo "CI/CD workflow completed successfully!"' > deploy.sh
+
+# Step 4: Make deploy.sh executable
+chmod +x deploy.sh
+
+# Step 5: Run the script
+./deploy.sh
+
+# Expected Output:
+# Building the app...
+# Running tests...
+# Deploying the app...
+# CI/CD workflow completed successfully!
+
+# Step 6: Push changes to GitHub
+git add app.py deploy.sh           # Stage files
+git commit -m "Add simple CI/CD workflow"   # Commit with message
+git push origin main               # Push to GitHub

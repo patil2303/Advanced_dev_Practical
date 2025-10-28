@@ -1,0 +1,12 @@
+Procedure:
+Part A: ping
+1. Run: ping google.com
+2. Observe response time, packet loss.
+Part B: traceroute
+1. Install: sudo apt install traceroute
+2. Run: traceroute google.com
+3. Observe hops and latency.
+Expected Output:
+- ping shows latency and packet loss.
+
+- traceroute shows path to the host.

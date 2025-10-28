@@ -1,0 +1,10 @@
+Procedure:
+1. Create S3 bucket.
+2. Create Lambda function (Python 3.9).
+3. Add S3 trigger: Event type PUT.
+4. Add Lambda code to log the upload event.
+5. Deploy function.
+6. Upload file to S3.
+7. Check logs in CloudWatch.
+Expected Output:
+- CloudWatch logs confirm file uploads.

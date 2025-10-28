@@ -1,0 +1,18 @@
+Procedure:
+Part A: Using htop
+1. Install: sudo apt install htop
+2. Run: htop
+3. Observe CPU, memory, tasks, and PIDs.
+4. Use F3 to search, F9 to kill a process.
+5. Quit: q
+Part B: Using netstat
+1. Install: sudo apt install net-tools
+2. Show open ports: netstat -tuln
+3. Show listening services: netstat -tulpn
+4. Show active connections: netstat -ant
+5. Show routing table: netstat -r
+
+Expected Output:
+- htop displays system resource usage.
+
+- netstat shows network connections and ports.

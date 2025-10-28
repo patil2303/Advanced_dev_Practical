@@ -1,0 +1,82 @@
+# **Experiment: Deploying a Static Website on AWS S3**
+
+```html
+<!-- Step 1: Create index.html (simple webpage) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Static Website</title>
+</head>
+<body>
+    <h1>Hello! This is my AWS S3 website.</h1>
+</body>
+</html>
+```
+
+---
+
+### **Step 2: Create an S3 Bucket**
+
+1. Log in to AWS Console → Go to **S3** → Click **Create bucket**.
+2. Give it a **unique name** (e.g., `my-static-website-2025`).
+3. Region: Choose your preferred region.
+4. **Uncheck** “Block all public access” to allow public access.
+5. Click **Create bucket**.
+
+---
+
+### **Step 3: Upload Files**
+
+1. Open your bucket → Click **Upload** → Add `index.html`.
+2. Click **Upload**.
+
+---
+
+### **Step 4: Enable Static Website Hosting**
+
+1. Go to **Properties** → **Static website hosting**.
+2. Select **Enable** → Choose **Use this bucket to host a website**.
+3. Set **Index document**: `index.html`.
+4. Save changes.
+
+> AWS will provide a **Website endpoint URL** (something like `http://my-static-website-2025.s3-website-us-east-1.amazonaws.com`).
+
+---
+
+### **Step 5: Set Bucket Policy for Public Access**
+
+1. Go to **Permissions** → **Bucket Policy** → Paste this JSON:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::my-static-website-2025/*"
+    }
+  ]
+}
+```
+
+* Replace `my-static-website-2025` with your bucket name.
+
+2. Save changes.
+
+---
+
+### **Step 6: Access Your Website**
+
+* Open the **Endpoint URL** provided in Step 4 in your browser.
+* You should see your webpage:
+
+```
+Hello! This is my AWS S3 website.
+```
+
+---
+
+

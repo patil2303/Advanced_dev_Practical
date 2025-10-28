@@ -1,0 +1,29 @@
+Procedure:
+Part A: Python Script
+1. Create myscript.py:
+
+from datetime import datetime
+
+with open("log.txt", "a") as f:
+    f.write(f"Script ran at: {datetime.now()}\n")
+2. Run: python3 myscript.py
+3: Check if the log file is created
+cat log.txt
+
+
+Part B: Cron Job
+1.Open crontab for editing
+crontab -e
+
+2.Add this line at the end
+
+* * * * * /usr/bin/python3 /full/path/to/myscript.py - 
+Replace /full/path/to/myscript.py with the absolute path of your script.
+Example: /home/shreyas/Experiment6/myscript.py
+
+3.Save and exit
+
+4.Wait a few minutes
+
+5.Check log.txt
+cat /full/path/to/log.txt
