@@ -6,7 +6,7 @@ Procedure:
 4. List images: docker images
 5. Run NGINX server: docker run -d -p 8080:80 nginx
 6. Access http://localhost:8080 to view the web page.
-7. Stop and remove containers: docker stop &lt;id&gt;, docker rm &lt;id&gt;
+7. Stop and remove containers: docker stop <id>, docker rm <id>
 Expected Output:
 - Ubuntu container terminal access.
 - NGINX welcome page visible.
