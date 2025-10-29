@@ -3,9 +3,9 @@ Procedure:
 2. Initialize a local repository: git init
 3. Create a file (hello.txt) and add content.
 4. Stage files: git add .
-5. Commit: git commit -m &#39;First commit&#39;
+5. Commit: git commit -m "First commit"
 6. Create a GitHub repo and copy its HTTPS URL.
-7. Link local repo: git remote add origin &lt;url&gt;
+7. Link local repo: git remote add origin "url"
 8. Push code: git push -u origin master
 
 Expected Output:
