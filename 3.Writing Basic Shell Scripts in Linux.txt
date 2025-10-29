@@ -1,6 +1,6 @@
 1. Create hello.sh:
 #!/bin/bash
-echo &#39;Hello, Welcome to Shell Scripting!&#39;
+echo "Hello, Welcome to Shell Scripting!"
 Make it executable: chmod +x hello.sh, then run ./hello.sh
 
 2. Create calculator.sh to read two numbers and output their sum.
