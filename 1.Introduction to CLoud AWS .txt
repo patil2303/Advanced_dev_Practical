@@ -1,11 +1,11 @@
 Procedure:
 1. Visit AWS (https://aws.amazon.com/console) and log in using your Free Tier student account.
-2. Search for &#39;Cloud9&#39; in the AWS console and select it.
-3. Click &#39;Create Environment&#39; and give it a name.
-4. Choose &#39;Create a new EC2 instance&#39; and select t2.micro with Amazon Linux 2.
+2. Search for Cloud9; in the AWS console and select it.
+3. Click Create Environment and give it a name.
+4. Choose Create a new EC2 instance and select t2.micro with Amazon Linux 2.
 5. Accept defaults and create the environment.
 6. Wait for Cloud9 to launch, then explore the code editor, terminal, and file explorer.
-7. Write and run a test program, such as print(&#39;Hello Cloud9!&#39;).
+7. Write and run a test program, such as print(Hello Cloud9!).
 
 Expected Output:
 - A fully functional online development environment.
